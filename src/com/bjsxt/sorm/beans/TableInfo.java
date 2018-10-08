@@ -14,7 +14,7 @@ public class TableInfo {
 	private String tname;
 	
 	//所有字段信息
-	private Map<String,ColumnInfo> colums;
+	private Map<String,ColumnInfo> columns;
 	
 	//唯一主键
 	private ColumnInfo onlyPriKey;
@@ -30,12 +30,12 @@ public class TableInfo {
 		this.tname = tname;
 	}
 
-	public Map<String, ColumnInfo> getColums() {
-		return colums;
+	public Map<String, ColumnInfo> getColumns() {
+		return columns;
 	}
 
-	public void setColums(Map<String, ColumnInfo> colums) {
-		this.colums = colums;
+	public void setColums(Map<String, ColumnInfo> columns) {
+		this.columns = columns;
 	}
 
 	public ColumnInfo getOnlyPriKey() {
@@ -57,17 +57,17 @@ public class TableInfo {
 	public TableInfo() {
 	}
 
-	public TableInfo(String tname, Map<String, ColumnInfo> colums, ColumnInfo onlyPriKey) {
+	public TableInfo(String tname, Map<String, ColumnInfo> columns, ColumnInfo onlyPriKey) {
 		super();
 		this.tname = tname;
-		this.colums = colums;
+		this.columns = columns;
 		this.onlyPriKey = onlyPriKey;
 	}
 
-	public TableInfo(String tname, Map<String, ColumnInfo> colums, List<ColumnInfo> priKeys) {
+	public TableInfo(String tname, Map<String, ColumnInfo> columns, List<ColumnInfo> priKeys) {
 		super();
 		this.tname = tname;
-		this.colums = colums;
+		this.columns = columns;
 		this.priKeys = priKeys;
 	}
 	

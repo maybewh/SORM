@@ -6,5 +6,10 @@ package com.bjsxt.sorm.utils;
  *
  */
 public class StringUtils {
+
+	public static String firstChar2UpperCase(String tname) {
+
+		return null;
+	}
 	
 }
